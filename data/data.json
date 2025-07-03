@@ -1,0 +1,42 @@
+{
+  "codename": "GHOSTLY GENIUS",
+  "level": 1,
+  "hp": 95,
+  "mood": 65,
+  "focus": 45,
+  "exp": 65,
+  "stats": {
+    "Intelligence": 85,
+    "Physical": 60,
+    "Spiritual": 70,
+    "Core": 75,
+    "Psyche": 65
+  },
+  "quests": [
+    {
+      "id": "quest1",
+      "text": "Complete morning routine",
+      "completed": false
+    },
+    {
+      "id": "quest2",
+      "text": "Work on project for 2h",
+      "completed": false
+    },
+    {
+      "id": "quest3",
+      "text": "30min physical training",
+      "completed": false
+    },
+    {
+      "id": "quest4",
+      "text": "Meditation session",
+      "completed": false
+    },
+    {
+      "id": "quest5",
+      "text": "Learn something new",
+      "completed": false
+    }
+  ]
+}

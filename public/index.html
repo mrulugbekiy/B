@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life RPG Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="glow-overlay"></div>
+        
+        <!-- Profile Card -->
+        <div class="card profile-card">
+            <div class="avatar-container">
+                <img src="assets/avatar.png" alt="Avatar" class="avatar">
+                <div class="level-badge">Lv.1</div>
+            </div>
+            <div class="profile-info">
+                <h2 class="neon-text">Bositxon</h2>
+                <p class="codename">Codename: <span class="neon-cyan">GHOSTLY GENIUS</span></p>
+                <div class="exp-bar">
+                    <div class="exp-progress" style="width: 65%;"></div>
+                    <span class="exp-text">65% to next level</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Stats Radar Chart -->
+        <div class="card stats-card">
+            <h3 class="neon-text">ATTRIBUTES</h3>
+            <canvas id="radarChart"></canvas>
+        </div>
+        
+        <!-- Status Bars -->
+        <div class="card status-card">
+            <h3 class="neon-text">VITALS</h3>
+            <div class="status-bar">
+                <label>HP</label>
+                <div class="bar-container">
+                    <div class="bar hp-bar" style="width: 80%;"></div>
+                    <span class="bar-text">80/100</span>
+                </div>
+            </div>
+            <div class="status-bar">
+                <label>MOOD</label>
+                <div class="bar-container">
+                    <div class="bar mood-bar" style="width: 65%;"></div>
+                    <span class="bar-text">65/100</span>
+                </div>
+            </div>
+            <div class="status-bar">
+                <label>FOCUS</label>
+                <div class="bar-container">
+                    <div class="bar focus-bar" style="width: 45%;"></div>
+                    <span class="bar-text">45/100</span>
+                </div>
+            </div>
+            <div class="mana-recovery">
+                <span class="neon-purple">MANA RECOVERY: 12/min</span>
+            </div>
+        </div>
+        
+        <!-- Daily Quests -->
+        <div class="card quests-card">
+            <h3 class="neon-text">DAILY QUESTS</h3>
+            <div class="quest-list">
+                <div class="quest-item">
+                    <input type="checkbox" id="quest1" class="quest-checkbox">
+                    <label for="quest1">Complete morning routine</label>
+                </div>
+                <div class="quest-item">
+                    <input type="checkbox" id="quest2" class="quest-checkbox">
+                    <label for="quest2">Work on project for 2h</label>
+                </div>
+                <div class="quest-item">
+                    <input type="checkbox" id="quest3" class="quest-checkbox">
+                    <label for="quest3">30min physical training</label>
+                </div>
+                <div class="quest-item">
+                    <input type="checkbox" id="quest4" class="quest-checkbox">
+                    <label for="quest4">Meditation session</label>
+                </div>
+                <div class="quest-item">
+                    <input type="checkbox" id="quest5" class="quest-checkbox">
+                    <label for="quest5">Learn something new</label>
+                </div>
+            </div>
+            <div class="daily-levelup neon-yellow">
+                DAILY LEVEL UP: +3.5%
+            </div>
+        </div>
+        
+        <!-- Console -->
+        <div class="card console-card">
+            <h3 class="neon-text">SYSTEM CONSOLE</h3>
+            <div class="console-output">
+                <p>> System initialized...</p>
+                <p>> User stats loaded</p>
+                <p>> Daily quests generated</p>
+                <p>> Mana recovery active</p>
+                <p>> Awaiting player input...</p>
+            </div>
+            <div class="console-input">
+                <span class="prompt">></span>
+                <input type="text" class="command-input" placeholder="Enter command...">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
